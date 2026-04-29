@@ -2,9 +2,11 @@
   "name": "math-telegram-bot",
   "version": "1.0.0",
 "scripts": {
-  "build": "nest build",
-  "start:dev": "nest start --watch",
+  "build": "node ./node_modules/@nestjs/cli/bin/nest.js build",
   "start:prod": "node dist/main.js"
+},
+"engines": {
+  "node": "20.x"
 },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
