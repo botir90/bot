@@ -3,7 +3,6 @@ import { TelegrafModule } from 'nestjs-telegraf';
 import { TelegramUpdate } from './telegram/telegram.update';
 import { MathService } from './math/math.service';
 import { SessionService } from './session/session.service';
-import { AppController } from './app/app.controller';
 
 @Module({
   imports: [
@@ -12,6 +11,6 @@ import { AppController } from './app/app.controller';
     }),
   ],
   providers: [TelegramUpdate, MathService, SessionService],
-  controllers: [AppController],
+
 })
 export class AppModule {}
